@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #444;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    color: #BA68C8; /* Roxo */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.campoPalpite {
+    padding: 12px;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
+    border: 1px solid #666;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #555;
+    color: #fff;
+}
+
+.envioPalpite {
+    padding: 12px 20px;
+    background-color: #9C27B0; /* Roxo */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.envioPalpite:hover {
+    background-color: #7B1FA2; /* Roxo mais escuro */
+}
+
+.palpites {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ultimoResultado {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.baixoOuAlto {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ccc;
+}

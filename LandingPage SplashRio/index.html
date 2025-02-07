@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplashRio</title>
+    <style>
+        /* Estilização geral do corpo da página */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #e0f7fa;
+        }
+
+        /* Estilização do cabeçalho */
+        header {
+            background: #00796b; /* Cor de fundo verde escuro */
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            position: relative;
+            z-index: 10; /* Garante que o cabeçalho está acima do conteúdo */
+        }
+
+        header img {
+            width: 150px; /* Ajustado o tamanho da imagem do logo */
+            height: auto;
+        }
+
+        /* Estilização da navegação fixa */
+        nav {
+            background: #004d40; /* Cor de fundo verde escuro */
+            border-bottom: 4px solid #00796b; /* Linha verde mais clara */
+            padding: 10px 0;
+            position: fixed; /* Fixa a navegação no topo da página */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Garante que o menu está acima do conteúdo */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Adiciona um espaçamento para o conteúdo para não ficar atrás do menu fixo */
+        body {
+            padding-top: 80px; /* Ajuste o valor conforme necessário para a altura do menu fixo */
+        }
+
+        /* Estilização das seções */
+        div {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilização dos títulos principais */
+        h1, h2, h3 {
+            color: #004d40; /* Cor verde mais escura */
+            margin: 0.5em 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 1.5em;
+        }
+
+        /* Estilização das listas */
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        ul li {
+            margin-bottom: 20px;
+        }
+
+        /* Estilização das imagens dentro das listas */
+        ul li img {
+            width: 80%; /* Ajustado para 80% da largura do contêiner */
+            max-width: 300px; /* Tamanho máximo da imagem */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilização dos formulários */
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        form div {
+            margin-bottom: 15px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            background: #00796b;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        form button:hover {
+            background: #004d40;
+        }
+
+        /* Estilização dos separadores */
+        hr {
+            border: 0;
+            border-top: 2px solid #00796b;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="splash.png" alt="Logo do SplashRio">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#atracoes">Atrações</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div id="home">
+        <h1>Bem-vindo ao SplashRio!</h1>
+        <p>O SplashRio é o lugar ideal para se refrescar e se divertir com a família e amigos. Com diversas atrações aquáticas, desde emocionantes toboáguas até áreas relaxantes para os pequenos, garantimos diversão para todas as idades.</p>
+        <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2021/09/parques-aquaticos-mais-visitados-mundo-capa.jpg" alt="Diversão no SplashRio" width="900" height="600">
+        <ul>
+            <li>
+                <h2>Piscinas</h2>
+                <p>Relaxe em nossas diversas piscinas, desde a piscina de ondas até a piscina de borda infinita com vista para o Rio de Janeiro.</p>
+            </li>
+            <hr>
+            <li>
+                <h2>Toboáguas</h2>
+                <p>Sinta a adrenalina em nossos emocionantes toboáguas, com diferentes intensidades e alturas para todas as idades.</p>
+            </li>
+            <hr>
+            <li>
+                <h2>Área Infantil</h2>
+                <p>Nossa área infantil oferece brinquedos aquáticos e pequenas aventuras para os mais novos se divertirem com segurança.</p>
+            </li>
+            <hr>
+            <li>
+                <h2>Restaurantes e Lanchonetes</h2>
+                <p>Desfrute de uma variedade de opções gastronômicas em nossos restaurantes e lanchonetes espalhados pelo parque.</p>
+            </li>
+            <hr>
+        </ul>
+    </div>
+
+    <div id="atracoes">
+        <h1>Atrações</h1>
+        <ul>
+            <li>
+                <h2>Toboágua Radical</h2>
+                <p>Experimente a emoção com nosso toboágua radical que oferece uma descida emocionante e refrescante.</p>
+                <img src="https://parquedolcedulce.com.br/fotos/1719339051667b082bea031631182019.jpg" alt="Toboágua Radical">
+            </li>
+            <li>
+                <h2>Piscina de Ondas</h2>
+                <p>Divirta-se com ondas artificiais em nossa piscina projetada para simular a sensação do mar.</p>
+                <img src="https://acqualokos.com.br/wp-content/uploads/acqua-lokos-3-2-1097x650.jpg" alt="Piscina de Ondas">
+            </li>
+            <li>
+                <h2>Área Infantil Splash</h2>
+                <p>Uma área exclusiva para os pequenos, com brinquedos aquáticos seguros e muita diversão.</p>
+                <img src="https://passeioskids.com/wp-content/uploads/2023/01/parques-aquaicos-passeios-kids.webp" alt="Área Infantil">
+            </li>
+            <li>
+                <h2>Relaxamento e Bem-estar</h2>
+                <p>Descanse em nossas áreas de relaxamento com espreguiçadeiras e jardins ao redor das piscinas.</p>
+                <img src="https://cdn.jornaldaparaiba.com.br/wp-content/uploads/2023/08/Parque-Proposta105.jpg?xid=640515" alt="Área de Relaxamento">
+            </li>
+            <li>
+                <h2>Gastronomia</h2>
+                <p>Aproveite uma ampla variedade de opções de comida e bebida em nossos pontos de alimentação.</p>
+                <img src="https://static.baratocoletivo.com.br/2024/0613/g_1a67baf0c7.jpg" alt="Gastronomia">
+            </li>
+        </ul>
+    </div>
+
+    <div id="sobre">
+        <h1>Sobre o SplashRio</h1>
+        <h2>Conheça o Nosso Parque Aquático</h2>
+        <p>O SplashRio é um parque aquático que traz o melhor em diversão e entretenimento para toda a família. Localizado no coração do Rio de Janeiro, oferecemos um ambiente seguro e divertido para todas as idades. Com uma equipe dedicada e várias atrações emocionantes, garantimos um dia inesquecível para nossos visitantes.</p>
+        <h3>Nossa História</h3>
+        <p>Fundado em 2020, o SplashRio surgiu com o objetivo de proporcionar uma experiência única de lazer aquático. Desde a nossa inauguração, temos nos empenhado em oferecer um ambiente de alta qualidade e satisfação para todos os nossos visitantes.</p>
+        <h3>Nossas Atrações</h3>
+        <p>Com uma variedade de atrações, desde toboáguas radicais até áreas relaxantes, o SplashRio é o destino ideal para quem busca diversão e momentos de lazer. Nossas piscinas e toboáguas são projetados para garantir segurança e diversão para todas as idades.</p>
+        <h3>Compromisso com a Qualidade</h3>
+        <p>Estamos comprometidos em oferecer um ambiente seguro e agradável para todos. Nossos funcionários são treinados para garantir a melhor experiência possível, e nossas instalações são constantemente mantidas para atender aos mais altos padrões de qualidade.</p>
+        <h3>Visite-nos</h3>
+        <p>Convidamos você a visitar o SplashRio e experimentar tudo o que temos a oferecer. Se tiver alguma dúvida ou precisar de mais informações, não hesite em entrar em contato conosco.</p>
+    </div>
+
+    <div id="contato">
+        <h1>Contato</h1>
+        <p>Entre em contato conosco para qualquer dúvida ou sugestão!</p>
+        <h2>Formulário de Contato</h2>
+        <form action="" method="post">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Enviar Mensagem</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
