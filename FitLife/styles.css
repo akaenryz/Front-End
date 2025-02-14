@@ -1,0 +1,198 @@
+/* Reset básico */
+body, h1, h2, h3, p, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
+}
+
+.light-mode {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Botão de alternância de tema */
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background: #ff4500;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    background: #ff2200;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 20px;
+    background: url('') no-repeat center center/cover;
+    height: 100vh;
+}
+
+/* Camada preta semi-transparente */
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Opacidade de 50% */
+}
+
+/* Garantir que o conteúdo do Hero fique acima da camada escura */
+.hero-content {
+    position: relative;
+    text-align: left;
+    max-width: 50%;
+    padding-left: 50px;
+    z-index: 1;
+}
+
+/*.hero-image img {
+    width: 800px;
+    height: 800px;
+    padding-right: 50px;
+}*/
+
+#hero h1{
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+#hero p{
+    margin-bottom: 10px;
+}
+.cta {
+    background: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: #ff2200;
+}
+
+/* Benefícios */
+#benefits {
+    padding: 50px 20px;
+    background: #1e1e1e;
+}
+
+.light-mode #benefits {
+    background: white;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    background: #333;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.light-mode .benefit {
+    background: #ddd;
+}
+
+
+/* Carrossel de Depoimentos */
+.carousel {
+    padding: 50px 20px;
+    background: #1e1e1e;
+}
+
+.light-mode .carousel {
+    background: #eee;
+}
+
+.testimonial {
+    display: none;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.testimonial.active {
+    display: block;
+}
+
+/* Carrossel de Produtos */
+#product-carousel {
+    padding: 50px 20px;
+    background: #1e1e1e;
+}
+
+.light-mode #product-carousel {
+    background: white;
+}
+
+.product-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background: #222;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.light-mode .product-card {
+    background: #fff;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Oferta Especial */
+#special-offer {
+    background: #ffcc00;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: #222;
+    color: white;
+    text-align: center;
+}
+
+.light-mode footer {
+    background: #ccc;
+    color: black;
+}
